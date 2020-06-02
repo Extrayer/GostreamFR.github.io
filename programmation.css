@@ -265,7 +265,7 @@ section{
 /* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
 #Iframe-Liason-Sheet {
   max-width: 1225px;
-  max-height: 43em; 
+  max-height: 44em; 
   overflow: hidden;
   background: #222;
   color: #222;
