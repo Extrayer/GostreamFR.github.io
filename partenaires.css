@@ -372,7 +372,7 @@ svg circle
   color: #F03C3C;
   font-size: 18px;
 
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .description
@@ -380,11 +380,24 @@ svg circle
   position: relative;
   color: #777;
   font-size: 16px;
-  text-align: justify;
 
 
-  transition: 0.5s; 
+  transition: 0.1s; 
 }
+
+.container .card:hover .name
+{
+  font-size: 20px;
+}
+
+.container .card:hover .description
+{
+  color: #FFF;
+  font-size: 18px;
+}
+
+
+
 
 .card #hydrostudio{
   background-image: url('hydrostudio.jpg') ;

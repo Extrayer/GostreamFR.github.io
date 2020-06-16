@@ -197,6 +197,11 @@ header ul .social li a:hover{
   {
     margin-left: -75px;
   }
+
+  #pass
+  {
+    display: none;
+  }
 }
 
 
@@ -262,6 +267,8 @@ section{
   width: 100%; /* ESPACEMENT */
   display: flex;
   justify-content: space-around;
+
+  margin-bottom: 2em;
 }
 
 @media(max-width: 991px)
@@ -349,6 +356,10 @@ svg circle
   transform: translate(5px,5px);
 }
 
+#pass
+{
+  opacity: 0;
+}
 
 .text
 {
@@ -385,10 +396,8 @@ svg circle
   font-size: 16px;
 }
 
-.card a{
-}
-
-.card a i{
+.card a i
+{
   margin-top: 10px;
   width: 15%;
 }
@@ -517,6 +526,16 @@ svg circle
 
 .card #streamer_6{
   background-image: url(streamer_6.png);
+  background-size: 100%;
+}
+
+.card #streamer_7{
+  background-image: url(streamer_7.png);
+  background-size: 100%;
+}
+
+.card #streamer_plus{
+  background-image: url(streamer_plus.png);
   background-size: 100%;
 }
 
