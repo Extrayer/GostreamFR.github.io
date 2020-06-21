@@ -216,8 +216,6 @@ header ul .social li a:hover{
 }
 
 section{
-  display: flex;
-  justify-content: center;
   padding-top: 100px;
 }
 
