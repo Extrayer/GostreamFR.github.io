@@ -26,7 +26,7 @@ header
   justify-content: space-between;
   align-items: center;
   background: #000;
-  z-index: 1000;
+  z-index: 100000;
   transition: 0.6s;
 
   border-bottom: solid 2px #F03C3C;
@@ -71,7 +71,6 @@ header ul li a{
 header ul li a:hover
 {
   background: #F03C3C;
-  transition: 0.3s;
 }
 
 header ul .social{
@@ -200,14 +199,16 @@ header ul .social li a:hover{
   }
 }
 
-/*FIN DU MENU */
+/* FIN DU MENU */
+
+
+
+
 
 #page {
-   /* 1 */
+  min-height:100vh; /* 1 */
   display:flex; /* 2 */
   flex-direction:column; /* 3 */
-  position: relative;
-  display: flex;
 }
 
 #content {
@@ -215,8 +216,11 @@ header ul .social li a:hover{
 }
 
 section{
-  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
 }
+
 
 
 hr{
@@ -240,3 +244,4 @@ footer h1{
   color:  #f2f2f2;
   font-size: 16px;
 }
+
