@@ -206,7 +206,7 @@ header ul .social li a:hover{
 
 
 #page {
-  min-height:100vh; /* 1 */
+  min-height: 100vh; /* 1 */
   display:flex; /* 2 */
   flex-direction:column; /* 3 */
 }
@@ -219,6 +219,9 @@ section{
   padding-top: 90px;
 }
 
+.full-height {
+  height: 100vh;
+}
 
 hr{
   margin: 0;
