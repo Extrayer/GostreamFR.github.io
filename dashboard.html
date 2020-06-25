@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="theme-color" content="#222222">
+  	<meta name="author" content="Extrayer">
+  	<meta name="description" content="Une WebTV pas comme les autres !">
+  	<meta property="og:type" content="website">
+  	<meta property="og:title" content="GOSTREAM">
+  	<meta property="og:description" content="Une WebTV pas comme les autres !">
+  	<meta property="og:url" content="https://gostream.fr">
+
+  	<link rel="icon" type="image/png" href="logo.png">
+	<title>Dashboard</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
+</head>
+
+<body>
+	<div id="app">
+
+        <div class="video-player">
+            
+            <div class="video-overlay"></div>
+
+            	<video controls="" autoplay="" name="media">
+            		<source src="https://fvs.io/redirector?token=dlR5UzhhNkIwQ2JhTmN4RzR2NTFyS2tjaXVmMGZwdUVoV3A4Nm1VOTM1bGoyT2kxbGJvVW5FVmR1SVVUNzMvdHJLTHhKa1dnUGEwRjFvR0YwSHJ2MlN5S05mK0ZpSk9SNjZPY3JybHl6Mnh6eEtSQWxiKzJGdDNQVHlyckEzNDN2RlFVdmI0bGR0MXM2VWFSQ1ZiTmIzdDFnWFlaU2FIeC9BPT06MDJxZ0MxOGdKZVZnaThodm5BSU80dz09" type="video/mp4">
+            	</video>
+
+            	
+        </div>
+
+        <div class="chatbox">
+
+            <div class="chatbox-status">
+                Chatbox
+            </div>
+
+            <div class="chatbox-info">
+            	<iframe
+				  id="chat_embed"
+				  src="https://www.twitch.tv/embed/gostreamfr/chat?parent=www.example.com"
+				  height="100%"
+				  width="100%">
+				</iframe>
+            </div>
+
+
+            <div class="chatbox-copyright">
+				GoStream.fr © 2020 
+				<br /><br />
+				Tous droits réservés
+
+            </div> 
+
+    	</div>
+
+    </div>
+
+    <style>
+
+        #app {
+            background: #000;
+            color: #FFF;
+            overflow: hidden;
+            display: flex;
+            height: 100vh;
+            font-family: Trebuchet MS, 'Roboto', sans-serif;
+            font-size: .95rem;
+        }
+
+        .video-player {
+            position: relative;
+            flex: 1 1 0;
+        }
+
+        .video-player video {
+            outline: 0;
+            height: 100%;
+            max-width: 100%;
+        }
+
+        .video-overlay {
+            pointer-events: none;
+            position: absolute;
+            z-index: 1000;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            max-width: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .chatbox {
+            background: #111111;
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+        }
+
+        .chatbox-status {
+            color: #FFF;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        .chatbox-info {
+            background: rgba(255, 255, 255, .05);
+            overflow-y: auto;
+            flex: 1 1 0;
+            margin: 0;
+            padding: 1rem 1.5rem;
+        }
+
+        .chatbox-copyright {
+            overflow-y: auto;
+            margin: 0;
+            padding: 1rem 1.5rem;
+        }
+
+    </style>
+</body>
+
+</html>
