@@ -539,6 +539,11 @@ svg circle
   background-size: 100%;
 }
 
+.card #streamer_9{
+  background-image: url(streamer_9.png);
+  background-size: 100%;
+}
+
 .card #streamer_plus{
   background-image: url(streamer_plus.png);
   background-size: 100%;
